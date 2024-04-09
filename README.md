@@ -1,0 +1,1 @@
+## Instructions for creating local builds and running them locally or running applications using Docker are available in respective directories of backend and frontend

@@ -1,0 +1,11 @@
+FROM node:alpine3.19
+WORKDIR /express-app
+
+COPY package.json .
+
+RUN npm install
+RUN npm install ts-node-dev@2.0.0
+
+COPY . .
+
+CMD ["npx", "ts-node-dev", "src/index.ts"]
